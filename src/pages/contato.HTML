@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/contato.css">
+    <title>Contato - Barbearia Alura</title>
+</head>
+    <body>
+        <header>
+            <div class="container">
+                <h1><img src="../public/logo.png"></h1>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+
+            <form action="enviar.php" method="post">
+                <div class="container">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </main>
+
+
+        <footer>
+            <img src="../public/logo-branco.png" alt="#">
+            <p class="copy">&copy; Copyrigth Barbearia Alura 2019</p>
+        </footer>
+    </body>
+</html>
