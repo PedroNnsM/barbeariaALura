@@ -46,3 +46,11 @@ ul {
 .imagembeneficios {
 	width: 50%;
 }
+
+.mapa {
+	padding: 3em 0;
+}
+
+.mapa p {
+	margin-bottom: 2em;
+}

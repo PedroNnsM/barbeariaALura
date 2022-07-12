@@ -6,41 +6,148 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/reset.css">
-    <link rel="stylesheet" href="../styles/contato.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <title>Contato - Barbearia Alura</title>
 </head>
+    <!-- Para um codigo semantico temos tags promcipais para nosso body sendo elas header, main, footer e aside -->
     <body>
+        <!-- a tag header serve para monstrar onde sera o cabçalho da pagina, e deixa o site mais semantico-->
         <header>
             <div class="container">
-                <h1><img src="../public/logo.png"></h1>
-
+                <!-- na tag img é importante ter um texto alternativo(alt) para os leitores de acessibilidade consiga descrever a imagem para os deficientes visuais,-->
+                <h1>
+                    <img src="../public/logo.png" alt="Logo da Barbearia ALura">
+                </h1>
+                <!-- A tag nav serve para mostrar onde sera os links de navegação da pagina -->    
                 <nav>
+                    <!-- Nas tags ul temos as listas nao ordenadas para facilitar o agrupamento de itens, e a tag li justamente são os itens da lista-->
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="produtos.html">Produtos</a></li>
-                        <li><a href="contato.html">Contato</a></li>
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="produtos.html">
+                                Produtos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contato.html">
+                                Contato
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
         </header>
+        <!-- Na tag main entra todo o conteudo principal dessa pagina seria o conteudo do corpo dela-->
         <main>
-
-            <form action="enviar.php" method="post">
+            <!-- Para ter um formulario na pagina temos a tag form que é utilizada para agrupar todas as informções que queremos receber de nossos usuarios-->
+            <form action="" method="post">
                 <div class="container">
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
-                    <label for="mensagem">Mensagem</label>
-                    <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
-                    <input type="submit" value="Enviar">
+                    <!-- Na tag label serve como titulo para nosso inputs e eles são conectados pelos atributos for e id-->
+                    <label for="nome">
+                        Nome
+                    </label>
+                    <input type="text" name="nome" id="nome" class="input-padrao" placeholder="Nome completo" required>
+
+                    <label for="email">
+                        Email
+                    </label>
+                    <input type="email" name="email" id="email" class="input-padrao" placeholder="exemplo@seudominio.com" required>
+
+                    <label for="telefone">
+                        Telefone
+                    </label>
+                    <input type="tel" name="mensagem" id="telefone"  class="input-padrao" placeholder="(XX) XXXXX-XXXX" required>
+                    
+                    <label for="mensagem">
+                        Mensagem
+                    </label>
+                    <textarea cols="30" rows="10" id="mensagem" class="input-padrao" required></textarea>
+                    <!-- E para melhor a semantica do codigo e na leitura da pagina os grupos de informaçoes tambem são agrupados atraves da tag fildset e elas recebem a tag legend como tituto dos grupos-->
+                    <fieldset>
+                        <legend>
+                            Como prefere nosso contato?
+                        </legend>
+                        <!-- Colocando os inputs dentro das labels facilita a leitura e na conexão entre label e input-->
+                        <label for="radio-email">
+                            <input type="radio" name="contato" id="radio-email" value="email">
+                            Email
+                        </label>
+                        
+                        <label for="radio-telefone">
+                            <input type="radio" name="contato" id="radio-telefone" value="telefone">
+                            Telefone
+                        </label>
+                        
+                        <label for="radio-whatsapp">
+                            <input type="radio" name="contato" id="radio-whatsapp" value="whatsApp">
+                            WhatsApp
+                        </label>
+                        
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>
+                            Qual horário prefere ser atendido?
+                        </legend>
+                        <!-- O input select é utilizado para agrupar uma lista de itens a ser selecionada-->
+                        <select >
+                            <option value="manha">
+                                Manhã
+                            </option>
+
+                            <option value="tarde">
+                                Tarde
+                            </option>
+
+                            <option value="noite">
+                                Noite
+                            </option>
+                        </select>
+                    </fieldset>
+
+                    <label>
+                            <!-- O input do type checkbox serve para marcar se o usuario aceita a informação a ser selecionada -->
+                        <input type="checkbox" class="checkbox"> 
+                        Gostaria de receber as nossas novidades por email?
+                    </label> 
+                    <!-- O input submit serve para enviar os dados do formulario-->    
+                    <input type="submit" value="Enviar" class="enviar">
                 </div>
             </form>
-        </main>
-
-
+            <!-- a tag table é utilizada para formar a tabela de separada por thead(cabeçalho), tbody(corpo da tabela) tfoot(footer da tabela)-->
+            <table>
+                <thead>
+                <tr>
+                    <!-- Para melhorar a sematica tem a tag th para as linhas do cabeçalho e td para as linhas do corpo da tabela -->
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>8h - 20h</td>
+                </tr>
+                
+                <tr>
+                    <td>Quarta</td>
+                    <td>8h - 20h</td>
+                </tr>
+                
+                <tr>
+                    <td>Sexta</td>
+                    <td>8h - 20h</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
         <footer>
-            <img src="../public/logo-branco.png" alt="#">
+            <img src="../public/logo-branco.png" alt="Logo da Barbearia ALura">
             <p class="copy">&copy; Copyrigth Barbearia Alura 2019</p>
         </footer>
     </body>
