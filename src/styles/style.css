@@ -240,9 +240,44 @@ td, th {
 
 .imagemBeneficios {
 	width: 60%;
+	opacity:1;
+	transition: 400ms;
+}
+
+.imagemBeneficios:hover {
+	opacity: 0.3;
 }
 
 .video {
 	width: 560px;
 	margin: 2em auto;
+}
+
+@media screen and (max-width: 640px) {
+	.container, .principal, .conteudoBeneficios, .mapaConteudo, .video, .produtos {
+		width: 85%;
+	}
+
+	.principal {
+		width: 60%;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+	}
+	
+	.listaBeneficios li, .imagemBeneficios {
+		width: 100%;
+	
+	}
+	
+	.listaBeneficios {
+		width: 100%;
+		text-align: center;
+	}
+
 }
