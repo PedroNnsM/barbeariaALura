@@ -75,13 +75,13 @@ nav a:hover {
 	font-weight: bold;
 }
 
-.produto-preco {
+.produtoPreco {
 	font-size: 22px;
 	font-weight: bold;
 	margin: 10px 0 0;
 }
 
-.produto-descricao {
+.produtoDescricao {
 	font-size: 18px;
 }
 
@@ -102,9 +102,6 @@ footer {
 	margin: 20px;
 }
 
-main {
-	background-color: #555555;
-}
 
 form {
 	margin: 40px 0 ;
@@ -165,7 +162,7 @@ td, th {
 	width: 100%;
 }
 
-.titulo-principal {
+.tituloPrincipal {
 	text-align: center;
 	font-size: 2em;
 	margin: 0 0 1em;
@@ -173,8 +170,10 @@ td, th {
 }
 
 .principal {
-	width: 940px;
-	margin: 0 auto;
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
 }
 
 .principal p {
@@ -197,9 +196,12 @@ td, th {
 }
 
 .mapa {
-	width: 940px;
-	margin: 0 auto;
+	background: linear-gradient(#fefefe, #888888);
 	padding: 3em 0;
+}
+.mapaConteudo {
+    width: 940px;
+    margin: 0 auto;
 }
 
 .mapa p {
@@ -208,7 +210,8 @@ td, th {
 }
 
 .beneficios {
-	margin: 3em 0;
+	padding: 3em 0;
+	background: #888888;
 }
 
 .conteudoBeneficios {
@@ -225,6 +228,10 @@ td, th {
 
 .itens {
 	line-height: 1.5;
+}
+
+.itens::before{
+	content: "✦";
 }
 
 .itens:first-child {
