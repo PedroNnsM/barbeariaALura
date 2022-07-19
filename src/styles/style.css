@@ -70,6 +70,10 @@ nav a:hover {
 	transform: scale(1.05);
 }
 
+.produtos li img {
+	width: 80%;
+}
+
 .produtos h2 {
 	font-size: 30px;
 	font-weight: bold;
@@ -142,7 +146,9 @@ form label, form legend {
 }
 
 table {
-	margin: 20px 0 40px;
+	margin: 20px auto;
+	width: 50%;
+	padding: 25px;
 }
 
 thead {
@@ -253,8 +259,8 @@ td, th {
 	margin: 2em auto;
 }
 
-@media screen and (max-width: 640px) {
-	.container, .principal, .conteudoBeneficios, .mapaConteudo, .video, .produtos {
+@media screen and (max-width: 960px) {
+	.container, .principal, .conteudoBeneficios, .mapaConteudo, .video, .produtos, form {
 		width: 85%;
 	}
 
@@ -280,4 +286,20 @@ td, th {
 		text-align: center;
 	}
 
+	.input-padrao {
+		width: 100%;
+	}
+	.enviar{
+		justify-content: center;
+		align-items: center;
+	}
+	.produtos {
+		display: flex;
+		flex-direction: column;
+		
+	}
+	.produtos li {
+		margin: 15px auto;
+		width: 50%;
+	}
 }
