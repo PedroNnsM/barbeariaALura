@@ -6,8 +6,8 @@ body{
 }
 
 header {
-	background: #BBBBBB;
-	box-shadow: 0 0 10px #000;
+	background: #dddddd;
+	box-shadow: 0 0 15px #000;
 	padding: 20px 0;
 }
 
@@ -40,8 +40,9 @@ nav a {
 }
 
 nav a:hover {
-	color: #FFFFFF;
-	text-decoration: underline;
+	color: darkorange;
+	opacity: 0.8;
+	text-decoration: none;
 }
 
 .produtos {
@@ -141,7 +142,7 @@ form label, form legend {
 }
 
 .enviar:hover {
-	transform:scale(1.2)  rotatex(360deg);
+	transform: scale(1.2)  rotatex(360deg);
 	background: darkorange;
 }
 
