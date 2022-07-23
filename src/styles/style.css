@@ -106,6 +106,13 @@ footer {
 	text-align: center;
 	margin: 20px;
 }
+footer p a {
+	color: #FFFFFF;
+	font-size: 13px;
+	text-align: center;
+	margin: 20px;
+	tex-decoration: none;
+}
 
 
 form {
