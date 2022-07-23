@@ -40,7 +40,7 @@ nav a {
 }
 
 nav a:hover {
-	color: darkorange;
+	color: #FF9600;
 	opacity: 0.8;
 	text-decoration: none;
 }
@@ -95,7 +95,7 @@ footer {
 	position: relative;
 	width: 100%;
 	margin: 0 auto;
-	background: url("../public/bg.jpg");
+	background: url("../assets/bg.jpg");
 	padding: 40px 0;
 	box-shadow: 0 0 10px #000;
 }
